@@ -7,5 +7,8 @@ The executable jar and exe files are provided in the "out/artifacts" folder.
 
 Great thanks to @Daniel Liang for the easy explanatations.
 
+# Preview
+
+![ezgif-5-441e2c149169](https://user-images.githubusercontent.com/10860936/48972180-58555180-f04b-11e8-8bdd-06c295b3da57.gif)
 
 
