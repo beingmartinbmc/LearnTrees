@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="331.0" prefWidth="428.0" style="-fx-background-color: #AFEEEE;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trees.controllers.View">
+   <children>
+      <ImageView fitHeight="204.0" fitWidth="448.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/trees.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="bst" layoutX="26.0" layoutY="250.0" mnemonicParsing="false" onAction="#bstAction" prefHeight="44.0" prefWidth="77.0" style="-fx-background-color: #98FB98;" text="BST">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="avl" layoutX="169.0" layoutY="250.0" mnemonicParsing="false" onAction="#avlAction" prefHeight="44.0" prefWidth="77.0" style="-fx-background-color: #F0E68C;" text="AVL">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="rb" layoutX="312.0" layoutY="250.0" mnemonicParsing="false" onAction="#rbAction" prefHeight="44.0" prefWidth="77.0" style="-fx-background-color: #CD5C5C;" text="RB">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
