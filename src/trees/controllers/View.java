@@ -17,31 +17,20 @@ public class View {
 
     @FXML
     private void bstAction(){
-        bst.setOnAction(e-> {
-            Stage menuStage = new Stage();
-            BstVisualiser menu = new BstVisualiser();
-            menu.start(menuStage);
-            menuStage.show();
-        });
+        bst.setOnAction(e-> setStage(new BstVisualiser()));
     }
     @FXML
     private void avlAction(){
-        avl.setOnAction(e-> {
-            Stage menuStage = new Stage();
-            AvlVisualiser menu = new AvlVisualiser();
-            menu.start(menuStage);
-            menuStage.show();
-        });
+        avl.setOnAction(e-> setStage(new AvlVisualiser()));
     }
     @FXML
     private void rbAction(){
-        rb.setOnAction(e-> {
-            Stage menuStage = new Stage();
-            RBVisualiser menu = new RBVisualiser();
-            menu.start(menuStage);
-            menuStage.show();
-        });
+        rb.setOnAction(e-> setStage(new RBVisualiser()));
     }
 
+    private void setStage(BstVisualiser menu){
+        Stage menuStage = new Stage();
+        menu.start(menuStage);
+        menuStage.show();
+    }
 }
-
